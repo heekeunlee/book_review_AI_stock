@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Splash Screen Logic
+    const splash = document.getElementById('splash');
+    setTimeout(() => {
+        splash.style.opacity = '0';
+        setTimeout(() => {
+            splash.style.display = 'none';
+        }, 500); // Wait for transition
+    }, 3000); // 3 seconds splash
+
     // 1. Smooth Scroll for Sticky Nav
     const navLinks = document.querySelectorAll('.sticky-nav a');
     navLinks.forEach(link => {

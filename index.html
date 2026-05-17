@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <div class="splash-content">
+            <img src="bookcover.png" alt="Book Cover" id="splash-img">
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <h1>할 수 있다! AI 주식 투자</h1>
@@ -81,7 +91,7 @@
         <!-- WRAP Framework -->
         <section id="wrap" class="book-section alternate">
             <div class="section-badge">핵심 프레임워크: AI-WRAP</div>
-            <h2>실수를 줄이고 수익을 굳히는 4단계 프로세스</h2>
+            <h2>실수를 줄이고 수익을 굳히는 4단계 프로세스(WRAP)</h2>
             <div class="wrap-detailed-grid">
                 <div class="wrap-card">
                     <div class="letter">W</div>
@@ -276,21 +286,21 @@
                     <h4>재무제표 황금지표 분석</h4>
                     <p>핵심 지표를 통해 기업의 질적 가치를 한눈에 파악합니다.</p>
                     <button class="copy-btn blue" data-target="p-lib-1">프롬프트 복사</button>
-                    <span id="p-lib-1" class="hidden-text">해당 기업의 최근 3년 재무제표를 바탕으로 [영업이익률, ROE, 부채비율, 당기순이익 대비 현금흐름]을 표로 정리하고, 이 회사가 '돈을 잘 버는 건강한 기업'인지 가치투자 관점에서 분석해줘.</span>
+                    <div class="visible-prompt" id="p-lib-1">해당 기업의 최근 3년 재무제표를 바탕으로 [영업이익률, ROE, 부채비율, 당기순이익 대비 현금흐름]을 표로 정리하고, 이 회사가 '돈을 잘 버는 건강한 기업'인지 가치투자 관점에서 분석해줘.</div>
                 </div>
                 <div class="lib-card">
                     <div class="lib-tag">리스크 관리</div>
                     <h4>Pre-mortem (사전 부검)</h4>
                     <p>미래의 실패를 가정하고 현재의 판단을 되돌아봅니다.</p>
                     <button class="copy-btn blue" data-target="p-lib-2">프롬프트 복사</button>
-                    <span id="p-lib-2" class="hidden-text">너는 세상에서 가장 비관적인 투자 애널리스트다. 내가 지금 이 종목을 매수하고 6개월 뒤에 -40% 손실을 보았다고 가정해봐. 그 손실을 유발한 결정적인 원인 5가지를 논리적으로 제시하고, 내가 지금 간과하고 있는 리스크를 비판해줘.</span>
+                    <div class="visible-prompt" id="p-lib-2">너는 세상에서 가장 비관적인 투자 애널리스트다. 내가 지금 이 종목을 매수하고 6개월 뒤에 -40% 손실을 보았다고 가정해봐. 그 손실을 유발한 결정적인 원인 5가지를 논리적으로 제시하고, 내가 지금 간과하고 있는 리스크를 비판해줘.</div>
                 </div>
                 <div class="lib-card">
                     <div class="lib-tag">리서치</div>
                     <h4>산업 밸류체인 맵핑</h4>
                     <p>종목을 넘어 산업 전체의 흐름을 읽습니다.</p>
                     <button class="copy-btn blue" data-target="p-lib-3">프롬프트 복사</button>
-                    <span id="p-lib-3" class="hidden-text">이 기업이 속한 산업의 업스트림(원자재), 미드스트림(부품/제조), 다운스트림(최종소비) 구조를 요약해줘. 특히 최근 공급망 이슈나 기술 변화로 인해 가장 큰 수혜를 보는 구간이 어디인지 분석해줘.</span>
+                    <div class="visible-prompt" id="p-lib-3">이 기업이 속한 산업의 업스트림(원자재), 미드스트림(부품/제조), 다운스트림(최종소비) 구조를 요약해줘. 특히 최근 공급망 이슈나 기술 변화로 인해 가장 큰 수혜를 보는 구간이 어디인지 분석해줘.</div>
                 </div>
             </div>
         </section>
